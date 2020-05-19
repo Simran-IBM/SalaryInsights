@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+  <title>ML Salary Predict & Estimate Model</title>
+</head>
+<body>
+   <div class="section">
+       <!-- Main Input For Receiving Query to our ML -->
+      <form action="{{ url_for('predict')}}" method="post">
+      	<input  type="text" name="Experience" placeholder="Enter Experience (in years)" required="required" min="0" max="80" />
+          <input  type="text" name="Job Title" placeholder="Enter Job Title (generic)" required="required"  />
+  		<input  type="text" name="Gender" placeholder="Select Gender" required="required" />
+
+          <button type="submit" class="btn btn-primary">Predict</button>
+      </form>
+     <br>
+     <br>
+     <p>
+     {{ prediction_text }}
+     </p>
+   </div>
+</body>
+</html>
