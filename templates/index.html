@@ -3,16 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
-  <title>ML Salary Predict & Estimate Model</title>
+  <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}"> -->
+  <title>ML Salary Estimation Model</title>
 </head>
 <body>
    <div class="section">
        <!-- Main Input For Receiving Query to our ML -->
       <form action="{{ url_for('predict')}}" method="post">
       	<input  type="text" name="Experience" placeholder="Enter Experience (in years)" required="required" min="0" max="80" />
-          <input  type="text" name="Job Title" placeholder="Enter Job Title (generic)" required="required"  />
-  		<input  type="text" name="Gender" placeholder="Select Gender" required="required" />
+        <select name="Gender" id="gender" required="required" >
+           <option value="1">Male</option>
+           <option value="0">Female</option>
+        </select>
+      <!--  <input  type="text" name="JobTitle" placeholder="Enter Job Title" required="required"  /> -->
+
+          
+        <select name="JobTitle" id="JobTitle" required="required" >
+            <option value="0">Administrator</option>
+            <option value="1">Engineer</option>
+            <option value="2">IT</option>
+            <option value="3">Media</option>
+            <option value="4">Medical</option>
+            <option value="5">Others</options>
+            <option value="6">Sales</option>
+            <option value="7">Scientist</option>
+            <option value="8">Teacher</option>
+            <option value="9">Accountant</option>
+            <option value="10">HR</options>
+        </select>
+
 
           <button type="submit" class="btn btn-primary">Predict</button>
       </form>
