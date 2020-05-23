@@ -45,7 +45,7 @@ Output Feature (Variable):
 
 Salary 
 
-     Nature of Features;  
+     Nature of Features
 
      Experience is continuous  
 
@@ -124,6 +124,6 @@ Preliminary results
       Code repository can be found at: https://github.com/Simran-IBM/SalaryInsights 
       
   
-Project Team collaborators:
-Simran Preet Singh Raina, Abin Thomas, Sundeep, Prince Munjal, Chhayank
+### Project Team collaborators:
+### Simran Preet Singh Raina, Abin Thomas, Sundeep, Prince Munjal, Chhayank
       
