@@ -1,6 +1,17 @@
 # SalaryInsights
 This project is utilizing Regression Supervised ML algorithm to predict salary 
 
+### Project Creation Flow:
+1. Created folder /IPYNB for Jupyter Notebook files. Created file PredictSalary to fetch the data from /data folder. Ran exploration, visualization(not much), cleaned the data, processed the data. Ran label encoding to run through Random Forest algorithm. 
+2. Created another IPYNB file PredictSalary1 to create Python methods to do: 1) Fetching data 2) Process Data 3) Ran the model.
+Also created Python file on the project hierarchy to be converted to .pkl file
+3. Created simple index.html file in /templates folder.
+4. Created app.py file for Flask API to:
+Render index.html for the user to input data
+On clicking Predict button, take the data and load the pkl file to run the prediction 
+Show back the output on /predict url
+
+
 ### Detailed introduction of the project 
 
 The project targeted to predict the salary of the employees based on certain factors. The problem statement is based on the pretext that while switching jobs, the employees certainly go forward with the idea of compensation growth, but how much percentage increase they should be expecting or asking should also be realistic enough. Many organizations put up the questions regarding the expected compensation. Consequently, lack of knowledge of their skills’ market value in the current scenario would prevent them in asking an unrealistic expected compensation growth, which can certainly discourage the human resources to move forward with a candidate that has a better clarity on their future prospects. 
